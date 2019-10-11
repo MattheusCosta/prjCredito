@@ -1,8 +1,9 @@
-<div class="columns">
+<div class="columns has-text-centered">
     <div class="column">
-        <h1 class="title">Calculo de Creditos</h1>
+        <h1 class="title">Creditos</h1>
     </div>
 </div>
+<hr>
 <div class="columns">
     <div class="column">
         <div class="field is-horizontal">
@@ -12,13 +13,72 @@
             <div class="field-body">
                 <div class="field">
                 <p class="control">
-                    <input class="input" type="text" readonly>
+                    <input class="input is-static" type="text" readonly>
                 </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="column">
-        <button class="button">Descontar</button>
+    <div class="column is-one-third">
+        <button class="button" id="descontar">Descontar</button>
     </div>
 </div>
+<hr>
+<div class="columns has-text-centered">
+    <div class="column">
+        <h1 class="title is-4">Operações</h1>
+    </div>
+</div>
+<div class="columns has-text-centered">
+
+    <div class="column">
+        <h1 class="title is-5">Deposito</h1>
+        <div class="column">
+            <label class="label">Definida:</label>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-3">
+                <button class="button definida"  id="add1">1</button>
+            </div> 
+            <div class="column is-3">
+                <button class="button definida"  id="add1">10</button>
+            </div>
+            <div class="column is-3">
+                <button class="button definida">100</button>
+            </div>
+        </div>
+        <div class="column">
+            <label class="label">Livre:</label>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-5">
+                <input class="input" type="number">
+            </div>
+            <div class="column is-3">
+                <button class="button">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <h1 class="title is-5">Saque</h1>
+        <div class="column">
+            <label class="label">Definida:</label>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-3">
+                <button class="button definida"  id="add1">1</button>
+            </div>
+            <div class="column is-3">
+                <button class="button definida"  id="add1">10</button>
+            </div>
+            <div class="column is-3">
+                <button class="button definida">100</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
