@@ -22,11 +22,11 @@ export class CreditoComponent implements OnInit {
     this._saldo--;
   }
 
-  deposito(valorDeposito:number, valorSaldo:number){
+  deposito(valorDeposito:number){
     this._saldo = this.credito.depositar(this._saldo, valorDeposito);
   }
 
-  saque(valorSaque:number, valorSaldo:number){
+  saque(valorSaque:number){
     this._saldo = this.credito.sacar(this._saldo, valorSaque);
   }
 

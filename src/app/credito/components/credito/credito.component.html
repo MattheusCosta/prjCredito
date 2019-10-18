@@ -8,19 +8,19 @@
     <div class="column">
         <div class="field is-horizontal">
             <div class="field-label is-normal">
-                <label class="label">Total</label>
+                <label class="label">Saldo</label>
             </div>
             <div class="field-body">
                 <div class="field">
                 <p class="control">
-                    <input class="input is-static" type="text" readonly>
+                    <input class="input is-static" type="text" [value]="exibirSaldo" readonly>
                 </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="column is-one-third">
-        <button class="button" id="descontar">Descontar</button>
+        <button class="button" id="descontar" (click)="descontar()">Descontar</button>
     </div>
 </div>
 <hr>
@@ -38,13 +38,13 @@
         </div>
         <div class="columns is-centered">
             <div class="column is-3">
-                <button class="button definida"  id="add1">1</button>
+                <button class="button definida"  id="add1" (click)="deposito(1)">1</button>
             </div> 
             <div class="column is-3">
-                <button class="button definida"  id="add1">10</button>
+                <button class="button definida"  id="add1" (click)="deposito(10)">10</button>
             </div>
             <div class="column is-3">
-                <button class="button definida">100</button>
+                <button class="button definida" (click)="deposito(100)">100</button>
             </div>
         </div>
     </div>
@@ -56,13 +56,13 @@
         </div>
         <div class="columns is-centered">
             <div class="column is-3">
-                <button class="button definida"  id="add1">1</button>
+                <button class="button definida"  id="add1" (click)="saque(1)">1</button>
             </div>
             <div class="column is-3">
-                <button class="button definida"  id="add1">10</button>
+                <button class="button definida"  id="add1" (click)="saque(10)">10</button>
             </div>
             <div class="column is-3">
-                <button class="button definida">100</button>
+                <button class="button definida" (click)="saque(100)">100</button>
             </div>
         </div>
     </div>
