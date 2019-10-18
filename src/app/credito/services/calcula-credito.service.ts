@@ -10,7 +10,7 @@ export class CalculaCreditoService {
   depositar(valorSaldo: number, valorDeposito: number):number{
     return valorSaldo+=valorDeposito;
   }
-  saque(valorSaldo: number, valorSaque: number):number{
+  sacar(valorSaldo: number, valorSaque: number):number{
     return valorSaldo+=valorSaque;
   }
 }
